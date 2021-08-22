@@ -1,0 +1,50 @@
+using System;
+class Calculator_Module {
+  static void Main() {
+    Console.Write("Enter a num: ");
+    double num1=Convert.ToDouble(Console.ReadLine());
+
+    Console.Write("Enter a num: ");
+    double num2=Convert.ToDouble(Console.ReadLine());
+
+    Console.Write("Enter an Operator: ");
+    string op= Console.ReadLine();
+
+    if (op=="+"){
+        Console.WriteLine(Add(num1,num2));
+    }else if(op=="-"){
+         Console.WriteLine(Sub(num1,num2));
+    }else if(op=="*"){
+         Console.WriteLine(Mul(num1,num2));
+    }else if(op=="/"){
+         Console.WriteLine(Div(num1,num2));
+    }else if(op=="%"){
+         Console.WriteLine(Mod(num1,num2));
+    }else{
+         Console.WriteLine("Invalid Operator");
+    }
+
+    Console.ReadLine();
+  }
+  static double Add(double num1,double num2){
+      double result=num1+num2;
+      return result;
+  }
+  static double Sub(double num1,double num2){
+      double result= num1-num2;
+      return result;
+  }
+  static double Div(double num1,double num2){
+      double result= num1/num2;
+      return result;
+  }
+  static double Mul(double num1,double num2){
+      double result= num1*num2;
+      return result;
+  }
+  static double Mod(double num1,double num2){
+      double result= num1%num2;
+      return result;
+  }
+
+}
