@@ -1,6 +1,6 @@
 using System;
 class Calculator_Module {
-  static void Main() {
+  static void Main(string[] args) {
     Console.Write("Enter a num: ");
     double num1=Convert.ToDouble(Console.ReadLine());
 
